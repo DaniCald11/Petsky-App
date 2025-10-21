@@ -16,13 +16,13 @@ Además, el sistema permite **gestionar información médica, perfiles de mascot
 - 📋 **Perfil de mascota:** muestra información general, foto, raza, edad y datos del propietario.  
 ![perfil mascota](Petsky_Proyecto_Emprendedores/design/perfilmascotascreen.png)
 - 🏥 **Historial médico:** acceso al expediente médico completo de la mascota. 
-![historial] (design/saludscreen.png) 
+![historial] (Petsky_Proyecto_Emprendedores/design/saludscreen.png) 
 - 🐾 **Menú y modificación de mascota:** interfaz intuitiva para gestionar y editar información.  
 - 📍 **Pantalla principal:** mapa con rastreo en tiempo real y opciones de control.  
 - ⚙️ **Base de datos y conexión PHP:** comunicación con el servidor mediante `conexion.php`.
 
 ---
-
+git 
 ## 🗂️ Estructura del proyecto
 
 ```
@@ -63,4 +63,5 @@ Desarrolladora Front-End & UX Designer
 📅 *Proyecto académico – 2025*  
 
 ---
+
 
