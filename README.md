@@ -12,7 +12,6 @@ Además, el sistema permite **gestionar información médica, perfiles de mascot
 - 🐕 **Rastreo GPS:** conoce la ubicación del perro mediante la plaquita conectada.  
 ![rastreo](Petsky_Proyecto_Emprendedores/design/rastreador.png)
 - 👤 **Inicio de sesión / Registro:** autenticación segura para acceder a los perfiles de las mascotas.  
-![pantalla principal](Petsky_Proyecto_Emprendedores/design/pantalla.png)
 - 📋 **Perfil de mascota:** muestra información general, foto, raza, edad y datos del propietario.  
 ![perfil mascota](Petsky_Proyecto_Emprendedores/design/perfilmascotascreen.png)
 - 🏥 **Historial médico:** acceso al expediente médico completo de la mascota. 
