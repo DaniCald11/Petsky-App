@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('Resources/fonts/Fontspring-DEMO-visbycf-thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('Resources/fonts/Fontspring-DEMO-visbycf-light.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('Resources/fonts/Fontspring-DEMO-visbycf-regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('Resources/fonts/Fontspring-DEMO-visbycf-medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('Resources/fonts/Fontspring-DEMO-visbycf-demibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('Resources/fonts/Fontspring-DEMO-visbycf-demiboldoblique.otf') format('opentype');
+    font-weight: 600;
+    font-style: oblique;
+}
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('Resources/fonts/Fontspring-DEMO-visbycf-bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('Resources/fonts/Fontspring-DEMO-visbycf-boldoblique.otf') format('opentype');
+    font-weight: 700;
+    font-style: oblique;
+}
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('Resources/fonts/Fontspring-DEMO-visbycf-extrabold.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('Resources/fonts/Fontspring-DEMO-visbycf-extraboldoblique.otf') format('opentype');
+    font-weight: 900;
+    font-style: oblique;
+}
+
+
+:root{
+    --naranja: rgb(222, 118, 71);
+    --naranja-focus: rgb(195, 77, 22);
+    --amarillo: #fdcb6e;
+    --verde: rgb(68, 136, 136);
+    --verde-focus: rgb(28, 116, 116);
+    --azul: rgb(153, 204, 205);
+    --crema: #faf2e9;
+    --azul_fuerte: #2F3542;
+    --azul_fuerte_focus: #192540;
+    --rosa: #f4e3e3;
+    --rosa_fuerte: #ff6b81;
+    --rosa_fuerte_focus: #ff4c67;
+    --gris: #f4f4f4
+}
+
+*{
+    font-family: 'VisbyCF';
+}
+
+body{
+    width: 99%;
+    height: 100%;
+    background-color: #f8f2e6;
+    display: flex;
+    justify-content: center
+    ;
+}
+
+.contenedor{
+    width: 500px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1{
+        font-family: 'VisbyCF';
+        font-weight:900;
+        color: var(--azul_fuerte);
+        text-align: center;
+    }
+
+    .Encabezado{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        img{
+            width: 40px;
+            height: auto;
+        }
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-top: 60px;
+
+        button{
+            border-radius: 12px;
+            padding: 15px;
+            border-style: none;
+            max-width: 300px;
+            width: 300px;
+            color: var(--gris);
+            cursor: pointer;
+            transition: 0.3s ease;
+            font-weight: 500;
+            box-shadow: 0px 5px 10px rgba(70, 70, 71, 0.25); /* Usa RGBA para definir la transparencia */
+        }
+
+        #IniciarSesion{
+            background-color: var(--verde);
+        }
+        #IniciarSesion:hover{
+            background-color: var(--verde-focus);
+        }
+        #Registrarse{
+            background-color: var(--naranja);
+        }
+        #Registrarse:hover{
+            background-color: var(--naranja-focus);
+        }
+    }
+    .imagen{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        img{
+            width: 100px;
+            height: auto;
+        }
+    }
+
+    .Welcome_text{
+        padding-top: 0px;
+        h1{
+            font-weight: 700;
+        }
+        p{
+            font-weight: 300;
+            color: rgb(90, 92, 100);
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+}

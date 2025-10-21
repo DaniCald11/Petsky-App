@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Perfil Mascota</title>
+</head>
+<body>
+    <div class="contenedor">
+        <button class="atras" onclick="window.location.href='../Pantalla_Principal/pantalla_principal.html'"><img src="../Resources/imgs/next.png" alt="atras"></button>
+        <div class="encabezado">
+            <h1>Perfil de la mascota</h1>
+        </div>
+        
+        <div class="imagen1">
+            <img class="foto_avatar" id="foto_avatar" src="../Resources/imgs/perro_gato.png" alt="Perro">
+            <button id="editarAvatar_btn" onclick="window.location.href='seleccionar_avatar.html'"><img id="editarAvatar_img" src="../Resources/imgs/edit_btn.png" alt="editar" style="border-radius: 50%;"></button>
+        </div>
+
+        <div class="contenido">
+            <form action="nueva_mascota.php" method="post" id="nueva_mascota">
+                
+                <input type="text" name="nombre_mascota" id="nombre_mascota" placeholder="Nombre de la mascota" required>
+                <p>Tipo</p>
+                
+                <div class="imagen2">
+                    <input type="radio" name="tipo" id="perro" value="perro">
+                    <label for="perro" class="btn-img"></label>
+                
+                    <input type="radio" name="tipo" id="gato" value="gato">
+                    <label for="gato" class="btn-img1"></label>
+                </div>
+
+
+                <input type="text" name="raza" id="raza" placeholder="Raza" required>
+                <input type="text" name="sexo" id="sexo" list="opciones-sexo" placeholder="Sexo de la mascota" required>
+                <datalist id="opciones-sexo">
+                <option value="Macho">
+                <option value="Hembra">
+                <option value="Desconocido">
+                </datalist>
+                <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+
+                <input type="text" name="id_rastreo" id="id_rastreo" placeholder="ID chip de rastreo">
+                
+                <div id="errorMensaje" style="display:none; color:red; margin:10px 0;"></div>
+
+                <button type="submit">Guardar</button>
+                
+            </form>
+
+            
+        </div>    
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

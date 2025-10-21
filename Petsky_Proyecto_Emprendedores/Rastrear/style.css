@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('../Resources/fonts/Fontspring-DEMO-visbycf-bold.otf') format('opentype');
+    font-weight: 700; /* bold equivale a 700 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('../Resources/fonts/Fontspring-DEMO-visbycf-boldoblique.otf') format('opentype');
+    font-weight: 700;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('../Resources/fonts/Fontspring-DEMO-visbycf-demibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('../Resources/fonts/Fontspring-DEMO-visbycf-demiboldoblique.otf') format('opentype');
+    font-weight: 600;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('../Resources/fonts/Fontspring-DEMO-visbycf-extrabold.otf') format('opentype');
+    font-weight: 800; /* extrabold suele ser 800 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('../Resources/fonts/Fontspring-DEMO-visbycf-extraboldoblique.otf') format('opentype');
+    font-weight: 800;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('../Resources/fonts/Fontspring-DEMO-visbycf-regular.otf') format('opentype');
+    font-weight: 400; /* regular equivale a 400 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('../Resources/fonts/Fontspring-DEMO-visbycf-light.otf') format('opentype');
+    font-weight: 300; /* light equivale a 300 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('../Resources/fonts/Fontspring-DEMO-visbycf-medium.otf') format('opentype');
+    font-weight: 500; /* medium equivale a 500 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('../Resources/fonts/Fontspring-DEMO-visbycf-thin.otf') format('opentype');
+    font-weight: 100; /* thin equivale a 100 */
+    font-style: normal;
+}
+
+
+:root{
+    --naranja: rgb(222, 118, 71);
+    --naranja-focus: rgb(195, 77, 22);
+    --amarillo: #fdcb6e;
+    --verde: rgb(68, 136, 136);
+    --verde-focus: rgb(16, 93, 93);
+    --azul: rgb(153, 204, 205);
+    --crema: #faf2e9;
+    --azul_fuerte: #2F3542;
+    --azul_fuerte_focus: #101624;
+    --rosa: #f4e3e3;
+    --rosa_fuerte: #ff6b81;
+    --rosa_fuerte_focus: #ff4c67;
+    --gris: #f4f4f4;
+    --fondo-claro: #f0ede9;
+}
+
+*{
+    font-family: 'VisbyCF';
+}
+
+body{
+    width: 99%;
+    height: 100%;
+    background-color: #f8f5f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.top
+{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.atras{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, filter 0.3s ease;
+    cursor: pointer;
+
+
+    img{
+        width: 20px;
+        height: 20px;
+        transform: scaleX(-1);
+    }
+}
+.atras:hover{
+    transform: scale(1.03);
+    filter: brightness(1.2);
+}
+
+.Encabezado
+    {
+        display: flex;
+        justify-content:right;
+        gap: 15px;
+        align-items: center;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 30px;
+        padding-bottom: 5px;
+        h1{
+            color: black;
+            font-weight: 700;
+            font-size: 25px;
+        }
+
+        img{
+            width: 60px;
+            border-radius: 50%;
+            box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.15);
+        }
+    }
+.Contenedor
+    {
+        box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.2);
+        width: 60%;
+        min-height: 500px;
+        margin: 0px;
+        border-radius: 25px;
+
+        background-color: white;
+        padding: 30px;
+        padding-top: 20px;
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        h1{
+            width: 95%;
+            text-align: left;
+            font-size: 25px;
+        }
+        
+    }
+
+.Botones{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 23px 7px;
+    margin-top: 20px;
+    background-color: transparent;
+
+    border-radius: 30px;
+    border: transparent;
+    box-shadow: 0px 7px 10px rgba(184, 184, 185, 0.2); /* Usa RGBA para definir la transparencia */
+    border: 1px solid rgb(211, 208, 208);
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 0;
+
+}
+.Botones:hover{
+    box-sizing: border-box;
+    background-color: var(--amarillo);
+    box-shadow: 0px 5px 10px rgba(184, 184, 185, 0.2); /* Usa RGBA para definir la transparencia */
+    border: 1px solid rgb(255, 190, 69);
+}
+#map {
+    height: 400px;
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+
+/* Estilos para dispositivos pequeños (celulares) */
+@media (max-width: 780px)
+{
+    body{
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+    }
+    .Encabezado
+    {
+        width: 100%;
+    }
+    .Contenedor
+    {
+        width: 100%;
+        height: 90vh;
+        margin: 0px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .Botones{
+        width: 100%;
+    }
+}

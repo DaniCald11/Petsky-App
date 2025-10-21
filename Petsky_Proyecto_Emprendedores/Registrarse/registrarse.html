@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registrarse</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="encabezado">
+            <img src="../Resources/imgs/Logo.png" alt="logo">
+            <h1>Registrarse</h1>
+        </div>
+
+        <div class="contenido">
+            <form action="registro.php" method="POST" id="registroForm">
+                
+                <input type="text" name="nombre" id="nombre" placeholder="nombre" required>
+                <input type="emaiL" name="correo" id="correo" placeholder="correo" required>
+                <input type="password" name="password" id="password" placeholder="contraseña" required>
+                <button type="submit">Enviar</button>
+                <p id="errorMensaje" style="margin: 0; font-weight: 500; display: none; color: red;"></p> <!-- Aquí se mostrará el error -->
+        
+                <p>¿Ya tienes una cuenta? <a href="../Iniciar_Sesion/iniciar_sesion.html">Inicia Sesión</a></p>
+                
+            </form>
+
+            <div class="imagen">
+                <img src="../Resources/imgs/perro.png" alt="Perro">
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

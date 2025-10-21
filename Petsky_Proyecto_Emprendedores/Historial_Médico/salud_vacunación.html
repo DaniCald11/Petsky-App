@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Inicio</title>
+   
+        
+   
+</head>
+<body>
+    <div class="top">
+        <button class="atras" id="atras"><img src="../Resources/imgs/next.png" alt="atras"></button>
+        <div class="Encabezado">
+            <h1 id="nombreMascota"></h1>
+            <img id="imagenMascota" src="" alt="Imagen de perfil">
+        </div>
+    </div>
+    <div class="Contenedor">
+        <h1>Vacunas</h1>
+
+        <form action="registro_vacuna.php" method="post" id="registroForm">
+        
+            <input type="hidden" name="id_mascota" id="id_mascota">
+
+            
+            <p>Agregar vacuna </p>
+            <input type="text" name="vacuna" id="vacuna" placeholder="Ingresa el nombre de la vacuna"  required class="input-bloque">
+            <p>Fecha de la vacuna</p>
+            <input type="date" name="fecha_vacuna" id="fecha_vacuna"  required class="input-fecha">
+            
+            <p>Válida hasta: </p>
+            <input type="date" name="fecha_valida" id="fecha_valida" 
+            required class="input-fecha">
+            
+            <img src="../Resources/imgs/vacunasperrogato.png" alt="Icono de agregar"  class="imagen">
+            <button class="Botones" type="submit">Guardar cambios</button>
+        </form>
+        
+    </div>
+</body>
+<script src="script_vacunas.js"></script>
+</html>

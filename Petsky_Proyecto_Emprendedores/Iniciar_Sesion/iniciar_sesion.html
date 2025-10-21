@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="encabezado">
+            <img src="../Resources/imgs/Logo.png" alt="logo">
+            <h1>Iniciar Sesion</h1>
+        </div>
+
+        <div class="contenido">
+            <form action="iniciar_sesion.php" method="POST" id="iniciarForm">
+                <input type="email" name="correo" id="correo" placeholder="correo" required>
+                <input type="password" name="password" id="password" placeholder="contraseña" required>
+                <button>Entrar</button>
+                <p id="errorMensaje" style="margin: 0; font-weight: 500; display: none; color: red; font-family: arial;"></p> <!-- Aquí se mostrará el error -->
+        
+                <p>¿Usuario nuevo? <a href="../Registrarse/registrarse.html">Registrate</a></p>
+                
+            </form>
+
+            <div class="imagen">
+                <img src="../Resources/imgs/perro.png" alt="Perro">
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inicio</title>
+   
+        
+   
+</head>
+<body>
+    <div class="top">
+        <button class="atras" id="atras"><img src="../Resources/imgs/next.png" alt="atras"></button>
+        <div class="Encabezado">
+            <h1 id="nombreMascota"></h1>
+            <img id="imagenMascota" src="" alt="Imagen de perfil">
+        </div>
+    </div>
+    <div class="Contenedor">
+        <h1>Salud</h1>
+        
+        <p>Vacunas</p>
+
+        <table id="tablaVacunas">
+                        <thead>
+                            <tr>
+
+                                <th>Nombre</th>
+                                <th>Fecha</th>
+                                <th>Vencimiento</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+
+
+        <div class="info-bloque" >Todavía no hay información </div>
+        
+        <p>Desparacitación</p>
+        <div class="info-bloque" >Todavía no hay información </div>
+        
+        <p>Visitas al veterinario</p>
+        <div class="info-bloque" >Todavía no hay información </div>
+        
+        <p>Ingresa que registro vas a agregar</p>
+        <input type="text" name="registro" id="registro" list="opciones-salud" placeholder="Tipo de registro" required>
+                <datalist id="opciones-salud">
+                <option value="Vacunas">
+                <option value="Desparacitación">
+                <option value="Visita al veterinario">
+                </datalist>
+
+        <img src="../Resources/imgs/saludperrito.png" alt="Icono de agregar"  class="imagen">
+
+        
+        <div class="btns">
+            <button class="Botones" id="btnAgregarRegistro">Agregar nuevo registro</button>
+        </div>    
+        
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

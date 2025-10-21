@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Inicio</title>
+</head>
+<body>
+    <div class="top">
+        <button class="atras" id="atras"><img src="../Resources/imgs/next.png" alt="atras"></button>
+        <div class="Encabezado">
+            <h1 id="nombreMascota"></h1>
+            <img id="imagenMascota" src="" alt="Imagen de perfil">
+        </div>
+    </div>
+    <div class="Contenedor">
+        <h1>Desparacitación</h1>
+        <form action="">
+        </form>
+        <p>Método </p>
+        
+        <input type="text" name="desparacitación" id="desparacitación" 
+        placeholder="Ingresa el método de desparacitación" 
+        required class="input-bloque" list="opciones-desparacitación">
+
+      
+        <datalist id="opciones-desparacitación">
+            <option value="Pastilla">
+            <option value="Inyectable">
+            <option value="Jarabe">
+        </datalist>
+
+        <p>Fecha de desparacitación</p>
+        
+        <!-- Input de fecha -->
+        <input type="date" name="fecha-desparacitacion" id="fecha-desparacitacion" 
+        required class="input-fecha">
+        
+        <p>Válida hasta: </p>
+        
+        <!-- Otro input de fecha -->
+        <input type="date" name="fecha-valida-hasta" id="fecha-valida-hasta" 
+        required class="input-fecha">
+        
+        <img src="../Resources/imgs/vacunasperrogato.png" alt="Icono de agregar" class="imagen">
+        <button class="Botones">Guardar cambios</button>
+    </div>
+</body>
+<script src="script_desparacitacion.js"></script>
+</html>

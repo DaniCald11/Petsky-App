@@ -1,0 +1,324 @@
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('../Resources/fonts/Fontspring-DEMO-visbycf-bold.otf') format('opentype');
+    font-weight: 700; /* bold equivale a 700 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('../Resources/fonts/Fontspring-DEMO-visbycf-boldoblique.otf') format('opentype');
+    font-weight: 700;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('../Resources/fonts/Fontspring-DEMO-visbycf-demibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('../Resources/fonts/Fontspring-DEMO-visbycf-demiboldoblique.otf') format('opentype');
+    font-weight: 600;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('../Resources/fonts/Fontspring-DEMO-visbycf-extrabold.otf') format('opentype');
+    font-weight: 800; /* extrabold suele ser 800 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('../Resources/fonts/Fontspring-DEMO-visbycf-extraboldoblique.otf') format('opentype');
+    font-weight: 800;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('../Resources/fonts/Fontspring-DEMO-visbycf-regular.otf') format('opentype');
+    font-weight: 400; /* regular equivale a 400 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('../Resources/fonts/Fontspring-DEMO-visbycf-light.otf') format('opentype');
+    font-weight: 300; /* light equivale a 300 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('../Resources/fonts/Fontspring-DEMO-visbycf-medium.otf') format('opentype');
+    font-weight: 500; /* medium equivale a 500 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VisbyCF';
+    src: url('../Resources/fonts/Fontspring-DEMO-visbycf-thin.otf') format('opentype');
+    font-weight: 100; /* thin equivale a 100 */
+    font-style: normal;
+}
+
+
+:root{
+    --naranja: rgb(222, 118, 71);
+    --amarillo: #fdcb6e;
+    --verde: rgb(68, 136, 136);
+    --verde-focus: rgb(16, 93, 93);
+    --azul: rgb(153, 204, 205);
+    --crema: #faf2e9;
+    --azul_fuerte: #2F3542;
+    --azul_fuerte_focus: #192540;
+    --rosa: #f4e3e3;
+    --rosa_fuerte: #ff6b81;
+    --rosa_fuerte_focus: #ff4c67;
+    --gris: #f4f4f4
+
+}
+
+*{
+    font-family: 'VisbyCF';
+    font-weight: 300;
+}
+
+body{
+    width: 99%;
+    height: 100%;
+    background: var(--blanco);
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor{
+    width: 600px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    .atras{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        padding: 10px;
+        border-radius: 50%;
+        width: 40px;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+        transition: transform 0.5s ease, filter 0.3s ease;
+        cursor: pointer;
+    
+        img{
+            width: 20px;
+            height: 20px;
+            transform: scaleX(-1);
+        }
+    }
+    .atras:hover{
+        transform: scale(1.03);
+        filter: brightness(1.2);
+    }
+
+    .encabezado{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        img{
+            width: 40px;
+            height: auto;
+        }
+
+        h1{
+            font-family: 'VisbyCF';
+            font-weight:900;
+            color: var(--negro);
+            text-align: center;
+        }
+    }
+
+    
+    .imagen1
+        {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            .foto_avatar{
+                height:120px;
+                width: auto;
+            }
+            button{
+                display: flex;
+                justify-content: center;
+                border: transparent;
+                color: transparent;
+                border-radius: 50%;
+                height: 40px;
+                width: 40px;
+                margin-left: -50px;
+                cursor: pointer;
+                transition: 0.3s ease;
+                box-shadow: 0px 5px 10px rgba(70, 70, 71, 0.25); /* Usa RGBA para definir la transparencia */
+                
+            }
+            button:hover{
+                translate: 2px -2px;
+            }
+        }
+
+    .imagen2
+        {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            img{
+                height:120px;
+                width: auto;
+            }
+            
+        }
+           
+          
+
+    .contenido{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 10px;
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            p1{
+                font-size: 14px;
+                color:#515356;
+                text-align: left;
+            }
+
+            input{
+                box-sizing: border-box;
+                padding: 12px;
+                border-radius: 7px;
+                background-color: transparent;
+                border: 2px solid #6e7076; 
+                width: 300px;
+                font-family: arial;
+            }
+            input[type="date"]::before {
+                content: "Fecha de nacimiento";
+                color:#515356;
+                display: block;
+                font-family: arial;
+              }
+
+            button{
+                border-radius: 12px;
+                padding: 15px;
+                border-style: none;
+                max-width: 300px;
+                width: 500px;
+                color: var(--gris);
+                cursor: pointer;
+                transition: 0.3s ease;
+                font-weight: 500;
+                background-color: var(--verde-focus);
+                box-shadow: 0px 5px 10px rgba(70, 70, 71, 0.25); /* Usa RGBA para definir la transparencia */
+            }
+
+            button:hover{
+                background-color: var(--verde);
+            }
+
+            .imagen2 input[type="radio"] {
+                display: none;
+            }
+            
+            /* Botón de perro */
+            .btn-img {
+                border-radius: 12px;
+                width: 120px;
+                height: 120px;
+                background-image: url('../Resources/imgs/esperro.png');
+                background-size: cover;
+                background-color: transparent;
+                cursor: pointer;
+                margin-right: 15px;
+                display: inline-block;
+                transition: transform 0.3s ease, filter 0.3s ease;
+                box-shadow: 0px 5px 10px rgba(70, 70, 71, 0.25); /* Usa RGBA para definir la transparencia */
+            
+            }
+            
+            .btn-img:hover,
+            input#perro:checked + .btn-img {
+                transform: scale(1.1);
+                filter: brightness(1.2);
+            }
+            
+            /* Botón de gato */
+            .btn-img1 {
+                border-radius: 12px;
+                width: 120px;
+                height: 120px;
+                background-image: url('../Resources/imgs/esgato.png');
+                background-size: cover;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                margin-left: 15px;
+                display: inline-block;
+                transition: transform 0.3s ease, filter 0.3s ease;
+                box-shadow: 0px 5px 10px rgba(70, 70, 71, 0.25); /* Usa RGBA para definir la transparencia */
+            
+            }
+            
+            .btn-img1:hover,
+            input#gato:checked + .btn-img1 {
+                transform: scale(1.1);
+                filter: brightness(1.2);
+            }
+            
+
+            p{
+                font-size: 14px;
+                color:#515356;
+
+                a{
+                    color: var(--naranja);
+                    text-decoration: none;
+                }
+            }
+        }
+        .imagen
+        {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            img{
+                height:250px;
+                width: auto;
+            }
+        }
+    }
+}
+
